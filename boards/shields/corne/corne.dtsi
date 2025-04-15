@@ -16,6 +16,81 @@
 &foostan_corne_5col_layout {
     transform = <&five_column_transform>;
 };
+/ {
+    behaviors {
+        hm_lctl: hm_lctl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LCTL";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+
+        hm_lalt: hm_lalt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LALT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+
+        hm_lgui: hm_lgui {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LGUI";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+
+        hm_lsft: hm_lsft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_LSFT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+
+        hm_rsft: hm_rsft {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_RSFT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+
+        hm_rgui: hm_rgui {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_RGUI";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+
+        hm_ralt: hm_ralt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_RALT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+
+        hm_rctl: hm_rctl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HM_RCTL";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+        };
+    };
+};
 
 / {
     chosen {
