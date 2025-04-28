@@ -39,8 +39,8 @@ layers:
   - Esc
   - $$mdi:apple-keyboard-command$$
   - BACKSPACE
+  - ENTER
   - ␣
-  - ⏎
   - ↹
   - LOW
   RAI:
@@ -81,9 +81,9 @@ layers:
   - {t: ▽, type: trans}
   - '~'
   - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
-  - ␣
-  - ⏎
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   LOW:
@@ -125,7 +125,7 @@ layers:
   - {t: ▽, type: trans}
   - $$mdi:apple-keyboard-command$$
   - {t: ▽, type: trans}
-  - ␣
-  - ⏎
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
