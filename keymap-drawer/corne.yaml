@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   BAS:
-  - ↹
+  - {t: ↹, h: LOW}
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - \
+  - {t: \, h: LOW}
   - {t: ESCAPE, h: RAI}
   - {t: A, h: LEFT GUI}
   - {t: S, h: LEFT ALT}
@@ -24,9 +24,9 @@ layers:
   - {t: K, h: RIGHT CONTROL}
   - {t: L, h: RIGHT ALT}
   - {t: ;, h: RIGHT GUI}
-  - ''''
+  - {t: '''', h: RAI}
   - $$mdi:apple-keyboard-shift$$
-  - {t: Z, h: LOW}
+  - Z
   - X
   - C
   - V
@@ -35,16 +35,16 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: RAI}
-  - Esc
-  - $$mdi:apple-keyboard-command$$
+  - /
+  - RIGHT SHIFT
+  - ''
+  - ↹
+  - {t: ENTER, h: LEFT GUI}
+  - {t: ␣, h: LEFT CONTROL}
   - BACKSPACE
-  - ENTER
-  - ␣
-  - ↹
-  - LOW
+  - Caps Word
   RAI:
-  - ↹
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -52,80 +52,123 @@ layers:
   - '%'
   - ^
   - AMPS
-  - KP MULTIPLY
+  - '*'
   - (
   - )
-  - '|'
-  - {type: held}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '-'
-  - '='
-  - '['
-  - ']'
   - \
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
+  - {type: held}
+  - {t: '1', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '2', h: LEFT ALT}
+  - {t: '3', h: LEFT CONTROL}
+  - {t: '4', h: LEFT SHIFT}
+  - '5'
+  - _
+  - {t: '=', h: RIGHT SHIFT}
+  - {t: '`', h: RIGHT CONTROL}
+  - {t: '[', h: RIGHT ALT}
+  - {t: ']', h: RIGHT GUI}
+  - '|'
+  - {t: ▽, type: trans}
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
-  - _
+  - '-'
   - +
+  - '~'
   - '{'
   - '}'
   - {t: ▽, type: trans}
-  - '~'
-  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   LOW:
-  - ↹
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - $$mdi:backspace-outline$$
+  - {type: held}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - {t: ▽, type: trans}
+  - MUTE
+  - VOLUME DOWN
+  - VOLUME UP
+  - BRI DN
+  - BRI UP
+  - ←
+  - ↓
+  - ↑
+  - →
+  - Print Scrn
+  - F12
   - BT CLR
   - BT 1
   - BT 2
   - BT 3
   - BT 4
-  - BT 5
-  - ←
-  - ↓
-  - ↑
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: '3', h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '3':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - S
+  - D
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - J
+  - K
+  - L
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - M
+  - ','
+  - .
+  - {t: ▽, type: trans}
+  - {t: '3', h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ␣
+  - '1'
+  - '2'
   - {t: ▽, type: trans}
